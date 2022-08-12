@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  backup_remover:
+    image: profteam/backup-remover
+    container_name: backup_remover
+    environment:
+      COUNT_FILES: 1
+    volumes:
+      - ./files/:/backups
+      - ./logs/:/var/log
+    networks:
+      - devnetwork
+networks:
+  devnetwork:
+    external: true

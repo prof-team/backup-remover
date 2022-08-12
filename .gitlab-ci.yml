@@ -6,7 +6,7 @@ stages:
 build:
   stage: build
   before_script:
-    - docker login -u $DOCKER_LOGIN -p$DOCKER_PASS
+    - docker login -u $DOCKER_PROFTEAM_USER -p$DOCKER_PROFTEAM_PASS
   script:
     - docker build -t profteam/backup-remover .
     - docker push profteam/backup-remover

@@ -1,9 +1,9 @@
 
 # remove your backups
 
-1. Pull image from [docker hub](https://hub.docker.com/r/profteam/backup_remover)
+1. Pull image from [docker hub](https://hub.docker.com/r/profteam/backup-remover)
 
-`docker pull profteam/backup_remover`
+`docker pull profteam/backup-remover`
 
 2. Now you can use image
 

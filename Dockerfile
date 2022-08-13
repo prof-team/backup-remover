@@ -9,7 +9,7 @@ COPY logrotate.conf /etc/logrotate.conf
 COPY remove_backups.sh /remove_backups.sh
 RUN chmod +x /remove_backups.sh
 
-RUN echo '*  6,18  *  *  * /bin/sh /remove_backups.sh >> /var/log/remove_backups.log' >> /etc/crontabs/root
+RUN echo '7  6,18  *  *  * /bin/sh /remove_backups.sh >> /var/log/remove_backups.log' >> /etc/crontabs/root
 
 WORKDIR /backups
 

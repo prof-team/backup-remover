@@ -34,7 +34,7 @@ version: '3'
 docker exec -it backup_remover /bin/sh /remove_backups.sh
 ```
 
-4You can run following command for testing logrotate
+4. You can run following command for testing logrotate
 ```
 docker exec -it backup_remover /usr/sbin/logrotate /etc/logrotate.conf
 ```
